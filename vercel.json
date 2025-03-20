@@ -12,6 +12,10 @@
           {
             "src": "qrcode.jpeg",
             "use": "@vercel/static"
+          },
+          {
+            "src": "coffee.png",
+            "use": "@vercel/static"
           }
     ]
   }
