@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #f4f4f4; /* Texto claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px; /* Adiciona um pouco de espaço nas bordas */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+.container {
+    text-align: center;
+    background: #2a2a2a; /* Fundo do container mais claro que o fundo da página */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px; /* Limita a largura do container */
+    width: 100%; /* Faz o container ocupar 100% da largura disponível */
+}
+
+h1 {
+    color: #ffcc00; /* Cor do título */
+}
+
+.qrcode {
+    width: 100%; /* Faz a imagem do QR Code ser responsiva */
+    max-width: 200px; /* Limita a largura máxima da imagem */
+    margin: 20px 0;
+}
+
+input {
+    width: 80%; /* Faz o campo de entrada ocupar 100% da largura */
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ffcc00; /* Cor do botão */
+    color: #1a1a1a; /* Texto escuro no botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave para a cor do botão */
+}
+
+button:hover {
+    background-color: #e6b800; /* Cor do botão ao passar o mouse */
+}

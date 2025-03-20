@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Compre um Cafezinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Me Compre um Cafezinho ☕</h1>
+        <p>Se você gosta do meu trabalho e quer me apoiar, considere fazer uma doação via PIX!</p>
+        <img src="./qrcode.jpeg" alt="QR Code para doação via PIX" class="qrcode">
+        <p>Ou copie o código do PIX:</p>
+        <input type="text" id="pixCode" value="00020126840014br.gov.bcb.pix01366e43d53f-9a22-422a-9010-af60a14d26280222Me compre um cafezinho5204000053039865802BR5925KAUA KELVYN COSTA DE MORA6006MACEIO62130509Cafezinho6304CD11" readonly>
+        <button onclick="copyToClipboard()">Copiar Código</button>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const pixCodeInput = document.getElementById('pixCode');
+            pixCodeInput.select();
+            document.execCommand('copy');
+            alert('Código PIX copiado para a área de transferência!');
+        }
+    </script>
+</body>
+</html>
